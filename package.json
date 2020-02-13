@@ -1,5 +1,5 @@
 {
-  "name": "photoblog",
+  "name": "angular-photo-blog",
   "scripts": {
     "postinstall": "npm run build",
     "serve": "webpack-dev-server --config config/develop.config.js --inline --progress --port 8080",
@@ -13,14 +13,11 @@
     "@angular/platform-browser-dynamic": "2.4.2",
     "core-js": "2.4.1",
     "ie-shim": "0.1.0",
-    "js-yaml": "^3.13.1",
-    "lodash": "^4.17.15",
     "rxjs": "5.0.3",
-    "underscore.string": "^3.3.5",
     "zone.js": "0.7.4"
   },
   "devDependencies": {
-    "@types/core-js": "git 0.9.35",
+    "@types/core-js": "0.9.35",
     "@types/node": "6.0.59",
     "angular2-template-loader": "0.6.0",
     "awesome-typescript-loader": "3.0.0-beta.18",
