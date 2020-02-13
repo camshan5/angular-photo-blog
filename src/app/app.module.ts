@@ -2,11 +2,11 @@
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { AppComponent } from "./app.component";
-import { EntryListComponents } from "./entries/entry-list/entry-list.components";
+import { EntryListComponent } from "./entries/entry-list/entry-list.component";
 
 @NgModule({
   imports: [BrowserModule],
-  declarations: [AppComponent, EntryListComponents],
+  declarations: [AppComponent, EntryListComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
