@@ -1,4 +1,5 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
+import { Entry } from "../shared/entry.model";
 
 @Component({
   selector: "app-entry",
@@ -6,12 +7,7 @@ import { Component } from "@angular/core";
   styleUrls: ["entry.component.css"]
 })
 export class EntryComponent {
-  title: string = "My First Photo";
-  photo: string = "http://placehold.it/800x500?text=Angular Basics";
-  description: string = "A Description of My First Photo";
-  comments: any[] = [
-    { name: "Fitz", comment: "A comment" },
-    { name: "Phoebe", comment: "A comment" },
-    { name: "Max", comment: "A comment" }
-  ];
+  // entry prop is how the data is shared between the two components
+  // assign Entry type to entry property
+  @Input() entry: Entry;
 }

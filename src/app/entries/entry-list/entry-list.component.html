@@ -1,2 +1,7 @@
-
-<app-entry></app-entry>
+<!--
+    add *ngFor directive to loop through our entries &
+    use 1 way data binding by passing entry to entries.
+    Then add `[]` to indicate it is a property on the
+    entry component
+-->
+<app-entry *ngFor="let entry of entries" [entry]="entry"></app-entry>
