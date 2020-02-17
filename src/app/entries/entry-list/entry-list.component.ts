@@ -5,4 +5,8 @@ import { Component } from "@angular/core";
   templateUrl: "entry-list.component.html",
   styleUrls: ["entry-list.component.css"]
 })
-export class EntryListComponent {}
+export class EntryListComponent {
+  constructor() {
+
+  }
+}
