@@ -15,7 +15,7 @@ export class InMemoryEntryService implements InMemoryDbService {
         comments: [
           {
             id: 1,
-            name: "Jane Smith",
+            name: "Fitzgerald S.",
             comment: "This is my favorite! I love it!"
           }
         ]
@@ -28,12 +28,12 @@ export class InMemoryEntryService implements InMemoryDbService {
         comments: [
           {
             id: 2,
-            name: "Kyle Jones",
+            name: "Phoebe S.",
             comment: "Nice!"
           },
           {
             id: 3,
-            name: "Alecia Clark",
+            name: "Max M.",
             comment: "All the greens make this amazing."
           }
         ]
@@ -53,12 +53,12 @@ export class InMemoryEntryService implements InMemoryDbService {
         comments: [
           {
             id: 4,
-            name: "Steve Johnson",
+            name: "Ollie S.",
             comment: "It looks like trouble is on the way."
           },
           {
             id: 5,
-            name: "Becky M",
+            name: "Winston S.",
             comment: "I imagine this was a shot of a storm that just passed."
           }
         ]
@@ -71,7 +71,7 @@ export class InMemoryEntryService implements InMemoryDbService {
         comments: [
           {
             id: 6,
-            name: "Lisa Frank",
+            name: "Fitzgerald S.",
             comment: "Beautiful!"
           }
         ]
