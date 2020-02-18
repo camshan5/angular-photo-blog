@@ -22,5 +22,8 @@
     </p>
   </div>
   <!-- Connect Entry Component to CommentForm Component-->
-  <app-entry-comment-form (onCommentAdded)="onCommentAdded($event)"></app-entry-comment-form>
+  <app-entry-comment-form
+    (onCommentAdded)="onCommentAdded($event)"
+    [entryId]="entry.id"
+  ></app-entry-comment-form>
 </div>
