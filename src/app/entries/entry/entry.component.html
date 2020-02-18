@@ -21,5 +21,6 @@
       <strong>{{ comment.name }}</strong> {{ comment.comment }}
     </p>
   </div>
-  <app-entry-comment-form></app-entry-comment-form>
+  <!-- Connect Entry Component to CommentForm Component-->
+  <app-entry-comment-form (onCommentAdded)="onCommentAdded($event)"></app-entry-comment-form>
 </div>

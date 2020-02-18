@@ -1,11 +1,13 @@
-<form>
+<form (submit)="onSubmit()">
   <div>
     <label for="name">Name </label>
-    <input type="text" id="name" />
+    <!-- Two way data binding to input with ngModel directive -->
+    <input type="text" id="name" name="name" [(ngModel)]="name" />
   </div>
   <div>
     <label for="comment">Comment </label>
-    <textarea id="comment"></textarea>
+    <!-- Two way data binding to input with ngModel directive -->
+    <textarea id="comment" name="comment" [(ngModel)]="comment"></textarea>
   </div>
   <div>
     <button>Submit</button>
