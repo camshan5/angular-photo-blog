@@ -1,0 +1,16 @@
+<form (submit)="onSubmit()" #commentForm="ngForm">
+  <div>
+    <label for="name">Name </label>
+    <!-- Two way data binding to input with ngModel directive -->
+    <input type="text" id="name" name="name" [(ngModel)]="name" />
+  </div>
+  <div>
+    <label for="comment">Comment </label>
+    <!-- Two way data binding to input with ngModel directive -->
+    <textarea id="comment" name="comment" [(ngModel)]="comment"></textarea>
+  </div>
+  <div>
+    <button>Submit</button>
+  </div>
+</form>
+

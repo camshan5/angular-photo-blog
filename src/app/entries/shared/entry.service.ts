@@ -7,6 +7,11 @@ export class EntryService {
   // Expose http service to the entry service
   constructor(private http: Http) {}
 
+  // Add comments to the server script (hacky --> need to add a db)
+  addComment(entryId: number, comment: { name: string; comment: string }) {
+    return this.http.post(`/app/entries/${entryId}/comments`, comment).toPromise();
+  }
+
   // generic type used
   getEntries(): Promise<Entry[]> {
     // call injected http service

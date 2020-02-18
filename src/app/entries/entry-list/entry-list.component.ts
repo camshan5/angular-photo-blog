@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { EntryService } from "..";
+import { EntryService } from "../shared/entry.service";
 import { Entry } from "../shared/entry.model";
 
 @Component({
