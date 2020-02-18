@@ -1,4 +1,4 @@
-<form (submit)="onSubmit()">
+<form (submit)="onSubmit()" #commentForm="ngForm">
   <div>
     <label for="name">Name </label>
     <!-- Two way data binding to input with ngModel directive -->
