@@ -2,15 +2,27 @@
   <div>
     <label for="name">Name </label>
     <!-- Two way data binding to input with ngModel directive -->
-    <input type="text" id="name" name="name" [(ngModel)]="name" />
+    <input
+      type="text"
+      id="name"
+      name="name"
+      [(ngModel)]="name"
+      required
+      minlength="3"
+    />
   </div>
   <div>
     <label for="comment">Comment </label>
     <!-- Two way data binding to input with ngModel directive -->
-    <textarea id="comment" name="comment" [(ngModel)]="comment"></textarea>
+    <textarea
+      id="comment"
+      name="comment"
+      [(ngModel)]="comment"
+      required
+      minlength="3"
+    ></textarea>
   </div>
   <div>
     <button>Submit</button>
   </div>
 </form>
-
