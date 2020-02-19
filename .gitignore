@@ -62,3 +62,5 @@ __build__/**
 # Don't check in secret files
 *secret.js
 
+# webpack
+/wwwroot/*
