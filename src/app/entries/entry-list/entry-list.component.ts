@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { EntryService } from "../shared/entry.service";
+import { EntryService } from "..";
 import { Entry } from "../shared/entry.model";
 
 @Component({
@@ -8,8 +8,8 @@ import { Entry } from "../shared/entry.model";
   styleUrls: ["entry-list.component.css"]
 })
 export class EntryListComponent implements OnInit {
-  entries: Entry[]; // create entries property
-
+  // create entries property
+  entries: Entry[];
   constructor(private entryService: EntryService) {}
 
   ngOnInit() {

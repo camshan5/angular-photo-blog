@@ -1,6 +1,6 @@
 <h2>{{ entry.title }}</h2>
 <figure>
-  <img src="{{ entry.photo }}" alt="photo" />
+  <img src="{{ entry.photo }}"  alt="image"/>
   <figcaption>{{ entry.description }}</figcaption>
 </figure>
 <div class="actions">
@@ -21,7 +21,6 @@
       <strong>{{ comment.name }}</strong> {{ comment.comment }}
     </p>
   </div>
-  <!-- Connect Entry Component to CommentForm Component-->
   <app-entry-comment-form
     (onCommentAdded)="onCommentAdded($event)"
     [entryId]="entry.id"
